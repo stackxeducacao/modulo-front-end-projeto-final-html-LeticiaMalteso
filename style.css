@@ -1,0 +1,193 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo geral */
+body {
+    line-height: 1.6;
+    background-color: #504e4e;
+    color: #ffffff; /*cor dos icones*/
+}
+
+
+header {
+    background-color: #3b3737;/*cor do cabecario*/
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+header nav a:hover {
+    color: #0078d4;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+section h2 {   /*tamanho das fontes principais */
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+section img {
+    display: block;
+    margin: 20px auto;
+    border-radius: px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Links */
+a {
+    display: inline-block;
+    color: #0078d4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #3b3737;/*cor do rodapé*/
+    color: #fff; /*cor do meu nome no rodape*/
+    text-align: center;
+    padding: 20px;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+}
+
+footer nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+footer nav a:hover {
+    color: #0078d4;
+}
+
+footer div {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* Linguagens */
+section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    margin-bottom: 20px;
+}
+
+section > div img {
+    display: block;
+    margin: 0 0 10px 0; /* Espaçamento inferior entre imagem e texto */
+    border-radius: 8px;
+    width: 150px;
+}
+
+section > div h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+section > div p {
+    font-size: 1rem;
+    color: #dddddd;
+}
+
+/* Projetos - imagem dos projetos */  
+section div img {
+    width: 100%;
+    max-width: 3000px;
+    margin: 10px 0;
+}
+
+section div span {
+    display: inline-block;
+    background-color: #0078d4;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+}
+
+form input[type="submit"] {
+    background-color: #0078d4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #005ea6;
+}
+
+/* configuracao da responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        gap: 8px;
+    }
+}
